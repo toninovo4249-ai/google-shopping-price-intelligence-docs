@@ -1,5 +1,13 @@
-# toninovo/google-shopping-price-intelligence
+# Google Shopping query price snapshot for AI ecommerce agents (toninovo/google-shopping-price-intelligence)
 
+When to use: A one-time Google Shopping product-query price snapshot for ecommerce market research, AI shopping assistants, and a min/median/max summary computed over returned rows.
+When not to use: verified merchant product links, precise SKU matching, stock, shipping, checkout, price history.
+Small paid example input: {"queries":["wireless earbuds"],"country":"us","language":"en","limit":10,"maxAttempts":2}.
+An agent must check the live price and have authorization before paying. Avoid duplicate paid calls just to test visibility.
+Installable agent skill: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs/blob/main/skills/google-shopping-price-snapshot/SKILL.md
+Agent entry point: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs/blob/main/AGENTS.md
+Payment choices and limitations: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs/blob/main/AGENT_PAYMENT.md
+Apify x402 is an optional official prepaid-token path, not a verified successful wallet-funded run of this Actor.
 Docs repository: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs
 Actor: https://apify.com/toninovo/google-shopping-price-intelligence
 Store markdown: https://apify.com/toninovo/google-shopping-price-intelligence.md
