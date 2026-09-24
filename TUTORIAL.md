@@ -37,3 +37,15 @@ Public tasks with fixed inputs:
 - https://apify.com/toninovo/google-shopping-price-intelligence/tasks/compare-laptop-prices
 - https://apify.com/toninovo/google-shopping-price-intelligence/tasks/wireless-earbuds-market-price
 - https://apify.com/toninovo/google-shopping-price-intelligence/tasks/espresso-competitor-prices
+
+## For autonomous AI agents
+
+This is a paid query-snapshot API, not a store-by-store verified offer service. Use it only when the user's task is answered by **returned Google Shopping search prices** and same-response min/median/max. Ask for authorization and honor an explicit spending limit before executing a paid call.
+
+- Agent installation and routing instructions: [Google Shopping price snapshot skill](skills/google-shopping-price-snapshot/SKILL.md).
+- Machine-readable entry point: [AGENTS.md](AGENTS.md).
+- Existing Apify account: read the official [MCP server docs](https://docs.apify.com/integrations/mcp), use `fetch-actor-details` with the Actor's exact slug, then use `call-actor` followed by `get-dataset-items`.
+- Wallet-funded agent: read [payment options and restrictions](AGENT_PAYMENT.md) and [Apify's official x402 documentation](https://docs.apify.com/integrations/x402). Do not assume this Actor's wallet payment route has been verified; check current eligibility and get payment authorization.
+- If a request needs a real merchant product page or a historical price series, **do not substitute these search-reference links**.
+
+The MCP search result list can omit lower-ranked Actors even when they are indexed. When an agent has chosen this skill, it can retrieve the exact Actor details by slug. This is an integration path, not evidence of general buyer discovery or external sales.
