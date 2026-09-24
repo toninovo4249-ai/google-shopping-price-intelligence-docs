@@ -1,0 +1,23 @@
+# toninovo/google-shopping-price-intelligence
+
+Docs repository: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs
+Actor: https://apify.com/toninovo/google-shopping-price-intelligence
+Store markdown: https://apify.com/toninovo/google-shopping-price-intelligence.md
+Default build: 0.2.12.
+Price: 0.003 USD per delivered product-result, billed by Apify. No separate payment gateway is documented here.
+Agent wallet checkout: not verified.
+Input: queries (required, 1-10 strings), country (default us), language (default en), limit (1-55, default 55), maxAttempts (1-4, default 4).
+Free Apify users: 1 query, limit 10, maxAttempts 2.
+Output fields a default run can return: query, country, language, rank, title, priceText, priceNumeric, currency, merchant, rating, reviewCount, imageUrl, link, queryProductCount, queryMerchantCount, queryMinPrice, queryMedianPrice, queryMaxPrice, queryPriceSpreadPct, attemptCount, queriedAt.
+link is a Google Shopping search reference. A production sample stored a google.com/search URL there. It is not a verified merchant product offer URL.
+Do not expect merchantOfferUrl, searchReferenceUrl, or provenanceStatus on the default build.
+Not for: product-page monitoring, stock, price history, checkout.
+MCP: fetch-actor-details with slug toninovo/google-shopping-price-intelligence. search-actors may omit this Actor. call-actor spends money.
+Run API: POST /v2/acts/toninovo~google-shopping-price-intelligence/runs
+Dataset: GET /v2/datasets/{defaultDatasetId}/items
+Python: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs/blob/main/examples/run_snapshot.py
+JavaScript: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs/blob/main/examples/run_snapshot.mjs
+Tutorial: https://github.com/toninovo4249-ai/google-shopping-price-intelligence-docs/blob/main/TUTORIAL.md
+Example task, compare competitor laptop prices, input laptop 16GB RAM, us, en, limit 20: https://apify.com/toninovo/google-shopping-price-intelligence/tasks/compare-laptop-prices
+Example task, ecommerce market price research for wireless earbuds, input wireless earbuds, us, en, limit 20: https://apify.com/toninovo/google-shopping-price-intelligence/tasks/wireless-earbuds-market-price
+Example task, compare espresso machine competitor prices, input espresso machine, us, en, limit 20: https://apify.com/toninovo/google-shopping-price-intelligence/tasks/espresso-competitor-prices
