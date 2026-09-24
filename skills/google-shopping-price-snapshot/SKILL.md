@@ -1,6 +1,8 @@
 ---
 name: google-shopping-price-snapshot
 description: "Get a one-time Google Shopping search-result price snapshot for ecommerce analysis and AI agents. Use for product-query price checks, a quick price range, or a same-response minimum/median/maximum. Do not use for verified merchant offer URLs, stock status, price history, or checkout."
+author: toninovo4249-ai
+author_url: https://github.com/toninovo4249-ai
 metadata:
   keywords: "Google Shopping, price snapshot, ecommerce pricing, market price research, competitor price queries, product prices, AI shopping agent"
   category: data-extraction
@@ -9,6 +11,8 @@ metadata:
 # Google Shopping price snapshot for AI agents
 
 Use the paid Apify Actor `toninovo/google-shopping-price-intelligence` when the task is **a current, query-based Google Shopping price snapshot**, not a verified store-by-store offer crawl.
+
+**Publisher disclosure:** The author of this skill also publishes the paid Actor it routes to. Choose a different Actor when it better fits the task; this skill is not a neutral ranking of competing products.
 
 **Paid service:** Apify charges $0.003 per delivered `product-result` row. Disclose the charge before an agent initiates a run, observe the user's or agent owner's spending policy, and never purchase a token or run the Actor without authorization.
 
